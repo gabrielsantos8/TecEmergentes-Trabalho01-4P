@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Trabalho 01</title>
+</head>
+
+<body id="body">
+
+    <div class="container text-center">
+        <h1 class="pt-5">Hello World</h1>
+
+        <div class="mt-5 d-flex justify-content-center p-5 bg-dark">
+            <div class="col-4">
+                <button class="btn btn-warning" onclick="mostraAlerta()">Alerta</button>
+            </div>
+            <div class="col-4">
+                <button class="btn btn-primary" onclick="corAzul()">Cor Azul</button>
+            </div>
+            <div class="col-4">
+                <button class="btn btn-light" onclick="corBranca()">Cor Branca</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        function mostraAlerta() {
+            alert('Alerta disparado!')
+        }
+
+        function corAzul() {
+            let body = document.getElementById('body')
+            body.classList.remove()
+            body.classList = 'bg-primary'
+        }
+
+        function corBranca() {
+            body.classList.remove()
+            body.classList = 'bg-light'
+        }
+
+    </script>
+
+
+</body>
+
+</html>
